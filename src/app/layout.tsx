@@ -9,11 +9,13 @@ export const metadata: Metadata = {
   description: 'Krzysztof Kowalczyk - Software Engineer, problem solver',
 }
 
+interface Props {
+  children: React.ReactNode
+}
+
 export default function RootLayout ({
   children,
-}: {
-  children: React.ReactNode
-})  {
+}: Props)  {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>

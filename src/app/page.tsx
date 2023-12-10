@@ -1,6 +1,5 @@
 import Metadata from 'next/head';
 import Layout, { siteTitle } from '../components/ArticleLayout';
-import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/articles';
 import Link from 'next/link';
 import { Date } from '../components/Date';
@@ -14,18 +13,18 @@ export default function Home() {
       <Metadata>
         <title>{siteTitle}</title>
       </Metadata>
-      <section className={utilStyles.headingMd}>
+      <section className='text-xl my-2'>
         <p>Software Engineer, problem solver.</p>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
+      <section className='my-4'>
+        <h2 className='text-xl my-2'>Articles</h2>
+        <ul className='list-none p-0 m-0'>
           {/* @ts-ignore */}
           {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
+            <li className='my-4' key={id}>
               <Link href={`/articles/${id}`}>{title}</Link>
               <br />
-              <small className={utilStyles.lightText}>
+              <small className='text-gray-500'>
                 <Date dateString={date} />
               </small>
             </li>
