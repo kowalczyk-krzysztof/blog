@@ -1,30 +1,33 @@
 import Layout from '../../components/ArticleLayout'
-import { getAllPostIds, getPostData } from '../../lib/articles';
+import { ArticleData, getAllArticlesIds, getArticleData } from '../../lib/articles';
 import Head from 'next/head';
 import { Date } from '../../components/Date';
 import '../../app/globals.css';
 
+interface Props {
+  articleData: ArticleData;
+}
 
-// @ts-ignore
-export default function Post({ postData }) {
+export default function Article({ articleData }: Props) {
+  const { title, date, contentHtml } = articleData;
   return (
     <Layout home={false}>
       <Head>
-        <title>{postData.title}</title>
+        <title>{title}</title>
       </Head>
       <article>
-        <h1 className='text-lg'>{postData.title}</h1>
-        <div className='text-gray-500'>
-          <Date dateString={postData.date} />
+        <h1 className='text-2xl'>{title}</h1>
+        <div className='text-gray-500 my-2'>
+          <Date dateString={date} />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div className='[&>p]:my-2' dangerouslySetInnerHTML={{ __html: contentHtml }} />
       </article>
     </Layout>
   );
 }
 
-export async function getStaticPaths() {
-  const paths = getAllPostIds();
+export const getStaticPaths = async () => {
+  const paths = getAllArticlesIds();
   return {
     paths,
     fallback: false,
@@ -32,12 +35,12 @@ export async function getStaticPaths() {
 }
 
 
-// @ts-ignore
-export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id);
+
+export const getStaticProps = async ({ params: { id } }: { params: { id: string } }) => {
+  const articleData = await getArticleData(id);
   return {
     props: {
-      postData,
+      articleData,
     },
   };
 }
