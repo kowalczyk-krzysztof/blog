@@ -1,6 +1,7 @@
 {
   "name": "blog",
   "version": "0.1.0",
+  "author": "Krzysztof Kowalczyk",
   "private": true,
   "scripts": {
     "dev": "next dev",

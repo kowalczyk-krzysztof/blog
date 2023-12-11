@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-  ul, ol {
+  ul,
+  ol {
     padding-inline-start: 20px;
     list-style: revert;
     list-style-position: inside;

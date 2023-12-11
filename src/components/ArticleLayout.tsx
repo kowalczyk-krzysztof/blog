@@ -1,8 +1,8 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
+import ProfileImage from "@/components/ProfilePicture";
+import Head from "next/head";
+import Link from "next/link";
 
-export const siteTitle = 'Krzysztof Kowalczyk';
+export const siteTitle = "Krzysztof Kowalczyk";
 
 interface Props {
   children: React.ReactNode;
@@ -11,7 +11,7 @@ interface Props {
 
 export default function Layout({ children, home }: Props) {
   return (
-    <div className='max-w-xl mx-auto mt-12 mb-24 px-2'>
+    <div className="max-w-xl mx-auto mt-12 mb-24 px-2">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -20,42 +20,26 @@ export default function Layout({ children, home }: Props) {
         />
         <meta name="og:title" content={siteTitle} />
       </Head>
-      <header className='flex flex-col items-center my-4'>
+      <header className="flex flex-col items-center my-4">
         {home ? (
           <>
-            <Image
-              priority
-              src="/images/profile.png"
-              className='rounded-full'
-              height={144}
-              width={144}
-              alt={siteTitle}
-            />
-            <h1 className='text-2xl my-2'>{siteTitle}</h1>
+            <ProfileImage />
+            <h1 className="text-2xl my-2">{siteTitle}</h1>
           </>
         ) : (
           <>
             <Link href="/">
-              <Image
-                priority
-                src="/images/profile.png"
-                className='rounded-full'
-                height={108}
-                width={108}
-                  alt={siteTitle}
-              />
+              <ProfileImage />
             </Link>
-              <h2 className='text-xl mb-2 mt-4 text-sky-600'>
-              <Link href="/">
-                  {siteTitle}
-              </Link>
+            <h2 className="text-xl mb-2 mt-4 text-sky-600">
+              <Link href="/">{siteTitle}</Link>
             </h2>
           </>
         )}
       </header>
       <main>{children}</main>
       {!home && (
-        <div className='mt-4 text-sky-600'>
+        <div className="mt-4 text-sky-600">
           <Link href="/">← Back to home</Link>
         </div>
       )}

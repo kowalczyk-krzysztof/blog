@@ -1,8 +1,12 @@
-import Layout from '../../components/ArticleLayout'
-import { ArticleData, getAllArticlesIds, getArticleData } from '../../lib/articles';
-import Head from 'next/head';
-import { Date } from '../../components/Date';
-import '../../app/globals.css';
+import Layout from "../../components/ArticleLayout";
+import {
+  ArticleData,
+  getAllArticlesIds,
+  getArticleData,
+} from "../../lib/articles";
+import Head from "next/head";
+import { Date } from "../../components/Date";
+import "../../app/globals.css";
 
 interface Props {
   articleData: ArticleData;
@@ -16,11 +20,14 @@ export default function Article({ articleData }: Props) {
         <title>{title}</title>
       </Head>
       <article>
-        <h1 className='text-2xl'>{title}</h1>
-        <div className='text-gray-500 my-2'>
+        <h1 className="text-2xl">{title}</h1>
+        <div className="text-gray-500 my-2">
           <Date dateString={date} />
         </div>
-        <div className='[&>p]:my-2' dangerouslySetInnerHTML={{ __html: contentHtml }} />
+        <div
+          className="[&>p]:my-2"
+          dangerouslySetInnerHTML={{ __html: contentHtml }}
+        />
       </article>
     </Layout>
   );
@@ -32,15 +39,17 @@ export const getStaticPaths = async () => {
     paths,
     fallback: false,
   };
-}
+};
 
-
-
-export const getStaticProps = async ({ params: { id } }: { params: { id: string } }) => {
+export const getStaticProps = async ({
+  params: { id },
+}: {
+  params: { id: string };
+}) => {
   const articleData = await getArticleData(id);
   return {
     props: {
       articleData,
     },
   };
-}
+};

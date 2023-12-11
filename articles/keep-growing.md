@@ -1,11 +1,11 @@
 ---
-title: 'Keep Growing'
-date: '2022-10-08'
+title: "Keep Growing"
+date: "2022-10-08"
 ---
 
 My dad asked me "You do this programming thing or whatever it's called, I've read that you need to be constantly learning to keep up. Is that true? Are you sure you can do that for the rest of your life? I wouldn't be able to". I was quite surprised when I heard that. While working at Evojam I got used to everyone having the "keep growing" mindset and I forgot not everyone is like that. In this article I want to help you switch your thinking to a more growth oriented mindset.
 
-"壁は高ければ高い程乗り越える意味があるから" - the higher the wall the more meaning there is in climbing over it. I heard this sentence in a song and I think it perfectly describes my mindset. What’s more satisfying  - doing one push-up or doing one hundred push-ups? Obviously the latter. But to get there you first need to be able to do one, then two, then three and so on. This is a process and each step is as important as the other ones and they’re all connected so you can’t just skip to the end. But don’t focus on the gains, focus on the process itself. Just like watching a growing plant, if you keep staring you will feel like nothing is happening, but if you come back in a week, you’ll notice the progress.
+"壁は高ければ高い程乗り越える意味があるから" - the higher the wall the more meaning there is in climbing over it. I heard this sentence in a song and I think it perfectly describes my mindset. What’s more satisfying - doing one push-up or doing one hundred push-ups? Obviously the latter. But to get there you first need to be able to do one, then two, then three and so on. This is a process and each step is as important as the other ones and they’re all connected so you can’t just skip to the end. But don’t focus on the gains, focus on the process itself. Just like watching a growing plant, if you keep staring you will feel like nothing is happening, but if you come back in a week, you’ll notice the progress.
 
 Think about what learning actually is - it’s just following the steps of someone who figured out something before. That’s why the key to growth is feedback. Sometimes you need someone else's view because if you look in one direction you won’t see the others and seeing things from different perspectives makes you notice things you might have missed. Seems obvious but learning from feedback is a skill itself. Often we think we are doing something right and getting confronted makes us defensive, that’s just how our brains work. But it’s important to overcome that mechanism and learn from others. There are people who have learned the same thing you’re learning, they probably made the same mistakes, so make use of their knowledge, it will push you further.
 

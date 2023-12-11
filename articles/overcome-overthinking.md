@@ -1,6 +1,6 @@
 ---
-title: 'How to stop overthinking and start working towards your goals '
-date: '2022-03-02'
+title: "How to stop overthinking and start working towards your goals "
+date: "2022-03-02"
 ---
 
 “How did you learn to code and to speak Japanese on your own?”
@@ -25,7 +25,7 @@ Now, let’s take a closer look at the word “overthink” as it’s an interes
 
 There’s another cornerstone of this mindset — consistency. Always try to take some steps, no matter how small. Don’t focus on the end goal, it leads to overthinking.
 
-When I started learning Japanese, I considered learning over 2000 kanji — Chinese characters —  to be an impossible task. To make it easier, I decided not to look at the bigger picture and just learn them daily, in small batches. Focusing on the result rather than the action itself can and will often lead to disappointment.
+When I started learning Japanese, I considered learning over 2000 kanji — Chinese characters — to be an impossible task. To make it easier, I decided not to look at the bigger picture and just learn them daily, in small batches. Focusing on the result rather than the action itself can and will often lead to disappointment.
 
 You might associate the word “daily” with “a daily standup meeting,” but it’s not exactly what I have in mind.
 

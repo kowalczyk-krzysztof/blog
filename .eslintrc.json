@@ -1,3 +1,15 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "react-app",
+    "next/core-web-vitals"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "react/jsx-key": "error",
+    "react/no-array-index-key": "error",
+    "react/jsx-sort-props": "error",
+    "@typescript-eslint/no-redeclare": "off"
+  }
 }

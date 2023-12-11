@@ -1,6 +1,6 @@
 ---
-title: 'How I got an IT job without a degree'
-date: '2022-07-14'
+title: "How I got an IT job without a degree"
+date: "2022-07-14"
 ---
 
 How do you start a career as a programmer?
