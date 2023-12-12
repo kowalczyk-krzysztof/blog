@@ -1,12 +1,12 @@
-import ProfileImage from "@/components/ProfilePicture";
-import Head from "next/head";
-import Link from "next/link";
+import Head from "next/head"
+import Link from "next/link"
+import ProfileImage from "@/components/ProfilePicture"
 
-export const siteTitle = "Krzysztof Kowalczyk";
+export const siteTitle = "Krzysztof Kowalczyk"
 
 interface Props {
-  children: React.ReactNode;
-  home?: boolean;
+  children: React.ReactNode
+  home?: boolean
 }
 
 export default function Layout({ children, home }: Props) {
@@ -44,5 +44,5 @@ export default function Layout({ children, home }: Props) {
         </div>
       )}
     </div>
-  );
+  )
 }

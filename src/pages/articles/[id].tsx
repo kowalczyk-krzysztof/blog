@@ -1,19 +1,19 @@
-import Layout from "../../components/ArticleLayout";
+import Head from "next/head"
+import Layout from "../../components/ArticleLayout"
+import { Date } from "../../components/Date"
 import {
   ArticleData,
   getAllArticlesIds,
   getArticleData,
-} from "../../lib/articles";
-import Head from "next/head";
-import { Date } from "../../components/Date";
-import "../../app/globals.css";
+} from "../../lib/articles"
+import "../../app/globals.css"
 
 interface Props {
-  articleData: ArticleData;
+  articleData: ArticleData
 }
 
 export default function Article({ articleData }: Props) {
-  const { title, date, contentHtml } = articleData;
+  const { title, date, contentHtml } = articleData
   return (
     <Layout home={false}>
       <Head>
@@ -30,26 +30,26 @@ export default function Article({ articleData }: Props) {
         />
       </article>
     </Layout>
-  );
+  )
 }
 
 export const getStaticPaths = async () => {
-  const paths = getAllArticlesIds();
+  const paths = getAllArticlesIds()
   return {
     paths,
     fallback: false,
-  };
-};
+  }
+}
 
 export const getStaticProps = async ({
   params: { id },
 }: {
-  params: { id: string };
+  params: { id: string }
 }) => {
-  const articleData = await getArticleData(id);
+  const articleData = await getArticleData(id)
   return {
     props: {
       articleData,
     },
-  };
-};
+  }
+}

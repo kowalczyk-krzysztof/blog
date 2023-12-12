@@ -1,5 +1,5 @@
-import { siteTitle } from "@/components/ArticleLayout";
-import Image from "next/image";
+import { siteTitle } from "@/components/ArticleLayout"
+import Image from "next/image"
 
 export default function ProfileImage() {
   return (
