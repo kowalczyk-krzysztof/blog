@@ -11,7 +11,7 @@ interface Props {
 
 export default function Layout({ children, home }: Props) {
   return (
-    <div className="max-w-xl mx-auto mt-12 mb-24 px-2">
+    <div className="max-w-xl mx-auto mt-12 mb-24 px-2 max-sm:mx-2">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
