@@ -8,13 +8,16 @@ import { getSortedArticles } from "../lib/articles"
 import ArticleCard from "@/components/ArticleCard"
 
 export const metadata: Metadata = {
-  title: siteTitle
+  title: siteTitle,
+  description: "Krzysztof Kowalczyk - software engineer, problem solver",
+  keywords: ["software", "engineer", "problem", "solver", "krzysztof", "kowalczyk", "blog"],
 }
 
 export default function Home() {
   const articles = getSortedArticles()
   return (
     <Layout home>
+      <link rel="icon" href="/favicon.ico" />
       <section className="text-lg my-2 flex flex-col justify-center items-center">
         <p>Software Engineer, problem solver.</p>
         <div className="flex gap-2 mt-2">
