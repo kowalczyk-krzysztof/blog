@@ -25,7 +25,7 @@ export default function Article({ articleData }: Props) {
           <Date dateString={date} />
         </div>
         <div
-          className="[&>p]:my-2"
+          className="[&>p]:my-2 [&>p]:indent-6"
           dangerouslySetInnerHTML={{ __html: contentHtml }}
         />
       </article>

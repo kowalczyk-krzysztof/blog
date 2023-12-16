@@ -1,4 +1,3 @@
-import Head from "next/head"
 import Link from "next/link"
 import ProfileImage from "@/components/ProfilePicture"
 
@@ -12,14 +11,6 @@ interface Props {
 export default function Layout({ children, home }: Props) {
   return (
     <div className="max-w-xl mx-auto mt-12 mb-24 px-2 max-sm:mx-2">
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Krzysztof Kowalczyk - software engineer, problem solver"
-        />
-        <meta name="og:title" content={siteTitle} />
-      </Head>
       <header className="flex flex-col items-center my-4">
         {home ? (
           <>
